@@ -66,7 +66,7 @@ export const createUserProject = async (req: Request, res: Response) => {
 
         //Enhance user  prompt
         const promptEnhanceResponse = await openai.chat.completions.create({
-            model: "qwen/qwen3-coder:free",
+            model: "arcee-ai/trinity-large-preview:free",
             messages: [
                 {
                     role: "system",
@@ -105,7 +105,7 @@ export const createUserProject = async (req: Request, res: Response) => {
 
         // Genrate website code
         const codeGenrationResponse = await openai.chat.completions.create({
-            model: "qwen/qwen3-coder:free",
+            model: "arcee-ai/trinity-large-preview:free",
             messages: [
                 {
                     role: "system",
